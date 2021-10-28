@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#show').click(function(){
+                $('#content').show();
+            });
+            $('#hide').click(function(){
+                $('#content').hide();
+            });
+            $('#toggle').click(function(){
+                $('#box').toggle();
+            });
+            $('#slideToggle').click(function(){
+                $('#slide').slideToggle(1000);
+            });
+        });
+    </script>
+    <style>
+        #content{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+        }
+
+        button{
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: lightsalmon;
+        }
+        #slide{
+            height: 200px;
+            width: 200px;
+            background-color: lightslategray;
+        }
+    </style>
+    <title>JQuery events</title>
+</head>
+<body>
+    <div id="content"></div> </div>  
+        <button id="show">show</button>
+        <button id="hide">Hide</button>
+    <hr>
+    <div id="box"></div>
+        <button id="toggle">Toggle</button>
+    <hr>
+    <div id="slide"></div>
+    <button id="slideToggle">Slide toggle</button>    
+  
+</body>
+</html>
